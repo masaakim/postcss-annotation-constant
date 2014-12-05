@@ -1,5 +1,5 @@
 {
-  "name": "postcss-const",
+  "name": "postcss-constant",
   "version": "0.0.1",
   "description": "PostCSS plugin for the annotation based binding rule set",
   "main": "index.js",
@@ -8,12 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/morishitter/postcss-const/git"
+    "url": "git://github.com/morishitter/postcss-constant/git"
   },
-  "keywords": ["postcss","plugin","css","annotation"],
+  "keywords": [
+    "postcss",
+    "plugin",
+    "css",
+    "annotation"
+  ],
   "author": "Masaaki Morishita",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "css-annotation": "^0.1.0"
+  },
   "devDependencies": {
+    "postcss": "^3.0.5",
+    "tape": "^3.0.3",
+    "tap": "^0.4.13"
   }
 }

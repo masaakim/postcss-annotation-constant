@@ -1,0 +1,10 @@
+.class {
+  /*
+   * @constant true
+   */
+  padding: 20px;
+}
+
+.class {
+  padding: 0;
+}

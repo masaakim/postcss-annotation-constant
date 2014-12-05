@@ -1,11 +1,11 @@
-# postcss-const [![Build Status](https://travis-ci.org/morishitter/postcss-const.svg)](https://travis-ci.org/morishitter/postcss-const)
+# postcss-constant [![Build Status](https://travis-ci.org/morishitter/postcss-constant.svg)](https://travis-ci.org/morishitter/postcss-constant)
 
 PostCSS plugin for the annotation based binding rule set
 
 ## Installation
 
 ```shell
-$ npm install postcss-const
+$ npm install postcss-constant
 ```
 
 ## Example
