@@ -14,3 +14,9 @@ test('throw error: Cannot cascade', function (t) {
     t.throws(res, /Cannot cascade/)
     t.end()
 })
+
+test('no error', function (t) {
+    var res = postcss().use(constant(fixture('test-2'))).process(fixture('test-2')).css.trim()
+    t.same(res, fixture('test-2'))
+    t.end()
+})

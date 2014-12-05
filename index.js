@@ -18,7 +18,7 @@ module.exports = function plugin (css, options) {
 
         root.eachRule(function (node) {
             constRules.forEach(function (constRule) {
-                if (node.selector === constRule) {
+                if (node.selector === constRule && !checkConstant(node)) {
                     var err = new Error('postcss-const: Cannot cascade ' + '`' + constRule + '`')
                     throw err
                 }
