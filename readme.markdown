@@ -31,7 +31,7 @@ Using this `input.css`:
 ```css
 .class {
   /*
-   * @constant true
+   * @constant
    */
   padding: 20px;
 }

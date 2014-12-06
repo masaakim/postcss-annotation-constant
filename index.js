@@ -36,7 +36,7 @@ function checkConstant (node) {
         children.forEach(function (child) {
             if (child.type === 'comment') text = child.text
         })
-        if (text.match(/\@constant\strue/)) return true
+        if (text.match(/\@constant/)) return true
     }
     return false
 }
