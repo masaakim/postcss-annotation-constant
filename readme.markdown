@@ -1,11 +1,11 @@
-# postcss-constant [![Build Status](https://travis-ci.org/morishitter/postcss-constant.svg)](https://travis-ci.org/morishitter/postcss-constant)
+# postcss-annotation-constant [![Build Status](https://travis-ci.org/morishitter/postcss-annotation-constant.svg)](https://travis-ci.org/morishitter/postcss-annotation-constant)
 
 PostCSS plugin for the annotation based binding rule set
 
 ## Installation
 
 ```shell
-$ npm install postcss-constant
+$ npm install postcss-annotation-constant
 ```
 
 ## Example
@@ -14,7 +14,7 @@ $ npm install postcss-constant
 // dependencies
 var fs = require("fs")
 var postcss = require("postcss")
-var constant = require("postcss-constant")
+var constant = require("postcss-annotation-constant")
 
 // css to be processed
 var css = fs.readFileSync("input.css", "utf8")
