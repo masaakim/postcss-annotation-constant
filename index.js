@@ -8,7 +8,7 @@ module.exports = function plugin (css, options) {
     return function (root) {
         var constRules = []
 
-        root.eachRule(function (node) {
+        root.walkRules(function (node) {
             annotations.forEach(function (annotation) {
                 if (annotation.rule === node.selector && checkConstant(node)) {
                     constRules.push(node.selector)
@@ -16,7 +16,7 @@ module.exports = function plugin (css, options) {
             })
         })
 
-        root.eachRule(function (node) {
+        root.walkRules(function (node) {
             constRules.forEach(function (constRule) {
                 if (node.selector === constRule && !checkConstant(node)) {
                     var err = new Error('postcss-const: Cannot cascade ' + '`' + constRule + '`')
